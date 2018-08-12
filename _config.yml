@@ -4,52 +4,23 @@
 # Site settings
 title: fair-list 
 description: |
-  Agentless Real Estate™
+  Agentless™ Real Estate
 owner: fair-list # or company name
 first_published: 2018 # if migrating another site, the year of your first publish
 email: info@fair-list.com
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.fair-list.com" # the base hostname & protocol for your site
 social:
-  twitter: https://twitter.com/<username>
-  github: https://github.com/<username>
+  twitter: https://twitter.com/fair_list
+  #github: https://github.com/<username>
   #linkedin-square: https://linkedin.com/in/<username>
   #facebook-official: https://facebook.com/<username>
   #google-plus-square: https://plus.google.com/u/0/+<username>
   #email: /contact/
-  #flickr:
   #instagram:
-  #youtube-square:
-  #spotify:
-  #stack-overflow:
-  #vimeo:
-  #reddit:
-  #stubleupon:
-  #delicious:
-  #pied-piper:
-  #digg:
-  #soundcloud:
-  #deviantart:
   #angellist:
-  #tumblr-square:
   #stackexchange:
-  #weibo:
-  #trello:
-  #foursquare:
-  #linux:
-  #bitbucket-square:
-  #vk:
   #slack:
-  #vine:
-  #weixin:
-  #yelp:
-  #skyatlas:
-  #leanpub:
-  #connectdevelop:
-  #ils:
-  #forumbee:
-  #tripadvisor:
-  #amazon:
 
 # Build settings
 markdown: kramdown
@@ -57,4 +28,4 @@ markdown: kramdown
 #  style: compressed
 
 # Google Analytics Token
-google_analytics: UA-119778556-1
+google_analytics: UA-120909028-1 
