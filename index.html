@@ -1,5 +1,30 @@
 ---
 layout: landing
+section_one_title: SELLERS - preserve your hard-earned equity when you list your homes For Sale By Owner
+section_one_content: Tools at your fingertips. List, schedule, negotiate, and close like a pro. Subscribe only long enough to complete your transaction.
+section_two_spotlight1: BUYERS - Discover houses For Sale By Owner.
+section_two_spotlight1_content: Don't rely on MLS. Agents avoid showing homes for sale by owner to buyers to preserve their commission. Discover the value of these properties with our apps.
+section_two_spotlight2: Negotiate directly with the Seller.
+section_two_spotlight2_content: Negotiate the price and contigencies directly in the app and make yours the winning offer. No agent required.
+section_two_spotlight3: Purchase without an Agent's premium.
+section_two_spotlight3_content: Buying a home with an agent means paying 3% or more on the final negotiated price. This could save $10k+ over the course of a 25 year mortgage*.
+section_three_title: Qualified leads for Real Estate Service Providers. 
+section_three_content: Do you provide services to Real Estate Buyers and Sellers? If so, our Affliate Referral Program is a great way to improve the visibility of your service and your reputation.
+
+affiliate1: Lawyers
+affiliate1_icon: fa-gavel
+affiliate2: Property Assessors
+affiliate2_icon: fa-compass
+affiliate3: Mortgage Brokers
+affiliate3_icon: fa-dollar
+affiliate4: Photographers/<br/>Stagers
+affiliate4_icon: fa-camera
+affiliate5: Movers
+affiliate5_icon: fa-truck
+affiliate6: Contractors
+affiliate6_icon: fa-wrench
+
+comments: true
 ---
 				<!-- Banner -->
 					<section id="banner">
@@ -7,7 +32,7 @@ layout: landing
 							<h2>{{ site.title }}</h2>
 							<p>{{ site.description | markdownify }}</p>
 							<ul class="actions">
-								<li><a href="#" class="button special">Activate</a></li>
+								<li><a href="#" class="button special">Subscribe</a></li>
 							</ul>
 						</div>
 						<a href="#one" class="more scrolly">Learn More</a>
@@ -17,15 +42,15 @@ layout: landing
 					<section id="one" class="wrapper style1 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Arcu aliquet vel lobortis ata nisl<br />
-								eget augue amet aliquet nisl cep donec</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>{{page.section_one_title}}</h2>
+								
+								<p>{{page.section_one_content}}</p>
 							</header>
 							<ul class="icons major">
-								<li><span class="icon fa-diamond major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart-o major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li><span class="icon fa-camera-retro major style1"><span class="label">Show</span></span></li>
+								<li><span class="icon fa-calendar major style2"><span class="label">Schedule</span></span></li>
+								<li><span class="icon fa-handshake-o major style3"><span class="label">Negotiate</span></span></li>
+								<li><span class="icon fa-truck major style41"><span class="label">Close</span></span></li>
 							</ul>
 						</div>
 					</section>
@@ -34,23 +59,20 @@ layout: landing
 					<section id="two" class="wrapper alt style2">
 						<section class="spotlight">
 							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>Magna primis lobortis<br />
-								sed ullamcorper</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{page.section_two_spotlight1}}</h2>
+								<p>{{page.section_two_spotlight1_content}}</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Tortor dolore feugiat<br />
-								elementum magna</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{page.section_two_spotlight2}}</h2>
+								<p>{{page.section_two_spotlight2_content}}</p>
 							</div>
 						</section>
 						<section class="spotlight">
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Augue eleifend aliquet<br />
-								sed condimentum</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.</p>
+								<h2>{{page.section_two_spotlight3}}</h2>
+								<p>{{page.section_two_spotlight3_content}}</p>
 							</div>
 						</section>
 					</section>
@@ -59,33 +81,32 @@ layout: landing
 					<section id="three" class="wrapper style3 special">
 						<div class="inner">
 							<header class="major">
-								<h2>Accumsan mus tortor nunc aliquet</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
+								<h2>{{page.section_three_title}}</h2>
+								<p>{{page.section_three_content}}</p>
 							</header>
 							<ul class="features">
-								<li class="icon fa-paper-plane-o">
-									<h3>Arcu accumsan</h3>
+								<li class="icon {{page.affiliate1_icon}}">
+									<h3>{{page.affiliate1}}</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-laptop">
-									<h3>Ac Augue Eget</h3>
+								<li class="icon {{page.affiliate2_icon}}">
+									<h3>{{page.affiliate2}}</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-code">
-									<h3>Mus Scelerisque</h3>
+								<li class="icon {{page.affiliate3_icon}}">
+									<h3>{{page.affiliate3}}</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-headphones">
-									<h3>Mauris Imperdiet</h3>
+								<li class="icon {{page.affiliate4_icon}}">
+									<h3>{{page.affiliate4}}</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-heart-o">
-									<h3>Aenean Primis</h3>
+								<li class="icon {{page.affiliate5_icon}}">
+									<h3>{{page.affiliate5}}</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
-								<li class="icon fa-flag-o">
-									<h3>Tortor Ut</h3>
+								<li class="icon {{page.affiliate6_icon}}">
+									<h3>{{page.affiliate6}}</h3>
 									<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 								</li>
 							</ul>
@@ -100,8 +121,33 @@ layout: landing
 								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
 							</header>
 							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Activate</a></li>
-								<li><a href="#" class="button fit">Learn More</a></li>
+								<li><a href="#" class="button fit special">Notify Me</a></li>
 							</ul>
 						</div>
+
+						{% if page.comments %}
+						<div id="disqus_thread" class="inner"></div>
+						<script>
+
+							/**
+							*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+							*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+							/*
+							var disqus_config = function () {
+							this.page.url = "{{site.url}}";  // Replace PAGE_URL with your page's canonical URL variable
+							this.page.identifier = "05042018"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+							};
+							*/
+
+							(function() { // DON'T EDIT BELOW THIS LINE
+							var d = document, s = d.createElement('script');
+							s.src = 'https://fair-list.disqus.com/embed.js';
+							s.setAttribute('data-timestamp', +new Date());
+							(d.head || d.body).appendChild(s);
+							})();
+						</script>
+
+						<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						{% endif %}
+
 					</section>
