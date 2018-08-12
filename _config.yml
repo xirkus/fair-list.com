@@ -29,3 +29,7 @@ markdown: kramdown
 
 # Google Analytics Token
 google_analytics: UA-120909028-1 
+
+# Amazon Alexa
+alexa_account: duVrr1O7kI20L7
+alexa_domain: fair-list.com
