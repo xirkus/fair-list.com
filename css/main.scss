@@ -1857,14 +1857,11 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	.intrinsic-container {
 		position: relative;
-  		height: 0;
-        	overflow: auto; 
+  		height: 2000px;
+        	overflow: hidden; 
 		-webkit-overflow-scrolling: touch;
 	}
 
-	.intrinsic-container-ratio {
-		padding-bottom: 200%;
-	}
 	
 	.intrinsic-container iframe {
 		position: absolute;
