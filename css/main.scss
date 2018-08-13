@@ -1858,7 +1858,7 @@ $baseurl: '{{ site.baseurl }}/images';
 	.intrinsic-container {
 		position: relative;
   		height: 0;
-  		overflow: hidden;
+  	/*	overflow: hidden; */
 	}
 
 	.intrinsic-container-ratio {
