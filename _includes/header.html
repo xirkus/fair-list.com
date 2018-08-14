@@ -8,8 +8,6 @@
         <div id="menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-	    <li><a href="https://goo.gl/forms/LP7hY8LyxMyNXqCf1">Buyers</a></li>
-	    <li><a href="https://goo.gl/forms/NAPSkrnUifu2iDUT2">Sellers</a></li>
             {% for my_page in site.pages %}
             {% if my_page.title %}
           	<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
