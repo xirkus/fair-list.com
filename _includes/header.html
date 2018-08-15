@@ -8,11 +8,24 @@
         <div id="menu">
           <ul>
             <li><a href="index.html">Home</a></li>
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-          	<li><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
+	    <li><a href="about.html">About</a></li>
+	    <li><a href="sellers.html">Sellers</a></li>
+	    <li><a href="buyers.html">Buyers</a></li>
+	    <li>Guides</li>
+	    
+	    <li>Blog
+		<ul>
+  		    {% for post in site.posts %}
+    			<li>
+      			    <a href="{{ post.url }}">{{ post.title }}</a>
+    			</li>
+  		    {% endfor %}
+		</ul>
+	    </li>
+	    
+            {% if jekyll.environment == "development" %}
+          	<li><a href="elements.html">Elements</a></li>
             {% endif %}
-            {% endfor %}
             <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
                    class="icon fa-feed"> RSS Feed</a></li>
           </ul>
