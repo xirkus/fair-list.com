@@ -37,3 +37,12 @@ alexa_domain: fair-list.com
 # Gems
 plugins:
  - jekyll-redirect-from
+
+# Collections
+# WARNING: Identifying a specific collection through the site variable is currently
+#          broken. These documents will be _generated_, but not programmatically 
+#          accessible.
+collections:
+  guides:
+    output: true
+
