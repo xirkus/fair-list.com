@@ -7,24 +7,26 @@
         <a href="#menu" class="menuToggle"><span>Menu</span></a>
         <div id="menu">
           <ul>
-            <li><a href="index.html">Home</a></li>
-	    <li><a href="about.html">About</a></li>
-	    <li><a href="sellers.html">Sellers</a></li>
-	    <li><a href="buyers.html">Buyers</a></li>
-	    <li>Guides</li>
-	    
+            <li><a href="/index.html">Home</a></li>
+	    <li><a href="/about.html">About</a></li>
+	    <li><a href="/sellers.html">Sellers</a></li>
+	    <li><a href="/buyers.html">Buyers</a></li>
+	    <li>Guides
+		<ul>
+		    <li><a href="/guides/sellers-101.html">Sellers 101</a></li>
+		    <li><a href="/guides/buyers-101.html">Buyers 101</a></li>
+		</ul>
+	    </li>
 	    <li>Blog
 		<ul>
   		    {% for post in site.posts %}
-    			<li>
-      			    <a href="{{ post.url }}">{{ post.title }}</a>
-    			</li>
+    			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
   		    {% endfor %}
 		</ul>
 	    </li>
 	    
             {% if jekyll.environment == "development" %}
-          	<li><a href="elements.html">Elements</a></li>
+          	<li><a href="/elements.html">Elements</a></li>
             {% endif %}
             <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}"
                    class="icon fa-feed"> RSS Feed</a></li>
