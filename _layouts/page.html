@@ -6,6 +6,9 @@ layout: default
   <header>
     <h2>{{ page.title }}</h2>
     <p>{{ page.description}}</p>
+    {% if page.action %}
+        <a class="big button special" href="{{page.action_url}}">{{page.action}}</a>
+    {% endif %}
   </header>
 
   <section class="wrapper style5">
