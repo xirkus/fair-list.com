@@ -139,6 +139,7 @@ html.embed {
   padding: 0 1em;
   text-decoration: none;
   width: 100%;
+  height: 2.75em;
 }
 
 .wufoo .instruct {
@@ -206,10 +207,12 @@ html.embed {
 .wufoo textarea.textarea,
 .wufoo input.file,
 .wufoo select.select {
-    font-style: normal;
-    font-weight: 400;
-    color: #333333;
-    font-size: 110%;
+  color: #fff; 
+  font-family: "Alegreya", serif;
+  font-size: 15pt;
+  font-weight: 400;
+  letter-spacing: 0.075em;
+  line-height: 1.65em;
 }
 
 .wufoo input.text,
