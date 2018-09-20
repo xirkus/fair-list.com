@@ -206,7 +206,9 @@ html.embed {
 .wufoo input.text,
 .wufoo textarea.textarea,
 .wufoo input.file,
-.wufoo select.select {
+.wufoo select.select,
+.safari .wufoo select.select
+{
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -221,29 +223,12 @@ html.embed {
   text-decoration: none;
   width: 100%;
   height: 2.75em;
-
-
-
-  //color: #fff;
-  //font-family: "Alegreya", serif;
-  //font-size: 15pt;
-  //font-weight: 400;
-  //letter-spacing: 0.075em;
-  //line-height: 1.65em;
 }
 
 .wufoo input.text,
 .wufoo textarea.textarea,
 .wufoo input.file {
     font-family: 'alegreya';
-}
-
-.safari .wufoo select.select {
-    background: #ffffff url(/images/fieldbg.gif) repeat-x top;
-    border: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    font-size: 110% !important;
 }
 
 .wufoo li div,
