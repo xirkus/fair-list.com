@@ -71,13 +71,6 @@ $baseurl: '{{ site.baseurl }}/images';
     font-family: _font(family);
 }
 
-#saveForm::after {
-  content: "Click";
-  text-indent: 0;
-  display: block;
-  line-height: initial; /* New content takes up original line height */
-}
-
 #logo a {
     background-image: url('https://');
     min-height: 0;
@@ -132,7 +125,21 @@ html.embed {
 }
 
 .wufoo input.text,
-.wufoo textarea.textarea {}
+.wufoo textarea.textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: rgba(144, 144, 144, 0.25);
+  border-radius: 3px;
+  border: none;
+  color: inherit;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
 
 .wufoo .instruct {
     border: 1px solid #e6e6e6;
