@@ -1,3 +1,7 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 /* - - - - - - - - - - - - - - - - - - - - -
 
  Title : Wufoo Custom CSS Theme
@@ -7,6 +11,37 @@
  Last Updated : Sept. 20, 2018
 
 - - - - - - - - - - - - - - - - - - - - - */
+
+$baseurl: '{{ site.baseurl }}/images';
+
+@import 'libs/vars';
+@import 'libs/functions';
+@import 'libs/mixins';
+@import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Alegreya+SC|Oswald');
+
+/*
+        Spectral by HTML5 UP
+        html5up.net | @n33co
+        Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+@import 'libs/skel';
+
+@include skel-breakpoints((
+        xlarge: '(max-width: 1680px)',
+        large: '(max-width: 1280px)',
+        medium: '(max-width: 980px)',
+        small: '(max-width: 736px)',
+        xsmall: '(max-width: 480px)'
+));
+
+@include skel-layout((
+        reset: 'full',
+        boxModel: 'border',
+        grid: ( gutters: 1.5em )
+));
+
 
 #saveForm,
 #nextPageButton,
@@ -44,7 +79,6 @@
 
 * html #logo a {
     background-image: none;
-    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src="https://", sizingMethod="crop");
 }
 
 html {
@@ -164,10 +198,6 @@ html.embed {
     font-size: 110%;
 }
 
-{
-    * Custom Fonts Break Dropdown Selection in IE *
-}
-
 .wufoo input.text,
 .wufoo textarea.textarea,
 .wufoo input.file {
@@ -176,9 +206,9 @@ html.embed {
 
 .safari .wufoo select.select {
     background: #ffffff url(/images/fieldbg.gif) repeat-x top;
-    border: 1px solid Background color 'ffffff url(/images/fieldbg.gif) repeat-x top' is not a hex color value.#;
-    border-bottom: 1px solid Background color 'ffffff url(/images/fieldbg.gif) repeat-x top' is not a hex color value.#;
-    border-right: 1px solid Background color 'ffffff url(/images/fieldbg.gif) repeat-x top' is not a hex color value.#;
+    border: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
     font-size: 110% !important;
 }
 
