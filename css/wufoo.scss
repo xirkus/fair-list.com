@@ -69,7 +69,13 @@ $baseurl: '{{ site.baseurl }}/images';
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: _font(family);
-    content: 'Click';
+}
+
+#saveForm::after {
+  content: "Click";
+  text-indent: 0;
+  display: block;
+  line-height: initial; /* New content takes up original line height */
 }
 
 #logo a {
