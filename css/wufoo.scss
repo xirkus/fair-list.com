@@ -69,6 +69,7 @@ $baseurl: '{{ site.baseurl }}/images';
     overflow: hidden;
     text-overflow: ellipsis;
     font-family: _font(family);
+    content: 'Click';
 }
 
 #logo a {
