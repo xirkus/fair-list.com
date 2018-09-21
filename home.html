@@ -1,0 +1,167 @@
+---
+layout: landing
+
+section_one_title: SELLERS - preserve your hard-earned equity when you list your homes For Sale By Owner.
+section_one_content: Tools at your fingertips. List, schedule, negotiate, and close like a pro. Subscribe only long enough to complete your transaction.
+
+section_two_spotlight1: BUYERS - Discover houses For Sale By Owner.
+section_two_spotlight1_content: Don't rely on MLS. Agents avoid showing homes for sale by owner to buyers to preserve their commission. Discover the value of these properties with our app.
+section_two_spotlight2: Negotiate directly with the Seller.
+section_two_spotlight2_content: Negotiate the price and contingencies/subjects directly in the app and make yours the winning offer. No agent required.
+section_two_spotlight3: Purchase without an Agent's premium.
+section_two_spotlight3_content: |
+  Buying a home with an agent means paying 2.5% - 4%<sup>*</sup> or more on the purchase price. This could save $10k+ over the course of a 25 year mortgage.
+  <br /><br /><sub>* 3.5% on the first $100k and 1.75% for the remaining balance in <u>Canada</u> for the buyer's agent.</sub>
+section_three_title: Qualified leads for Real Estate Service Providers. 
+section_three_content: Do you provide services to Real Estate Buyers and Sellers? If so, our Affliate Referral Program is a great way to improve the visibility of your service and your reputation.
+
+affiliate1: Lawyers
+affiliate1_icon: fa-gavel
+affiliate1_content: Every property transaction requires real estate lawyers to ensure a smooth transfer of ownership. Connect with qualified buyers and sellers directly.
+
+affiliate2: Property Assessors
+affiliate2_icon: fa-compass
+affiliate2_content: Before price negotiations, it is advised that a qualified property assessment be completed to ensure the state of the property. Make your services available to our qualified customers. 
+
+affiliate3: Mortgage Brokers
+affiliate3_icon: fa-dollar
+affiliate3_content: Financing is one of the most important aspects of buying a home. Connect with our pool of buyers to pre-qualify them for their search.
+
+affiliate4: Photographers/<br/>Stagers
+affiliate4_icon: fa-camera
+affiliate4_content: Showcasing a property means making it look its best. Our sellers provide an opportunity to offer your skills to improve their chances of success.
+
+affiliate5: Movers
+affiliate5_icon: fa-truck
+affiliate5_content: Once the deal is done, there is the hard work of moving. Make our customers lives easier by doing the heavy lifting for them.
+
+affiliate6: Contractors
+affiliate6_icon: fa-wrench
+affiliate6_content: Every home is as unique as its owners. Help them realize their vision by providing them with the resources/skills they need.
+
+---
+<!-- Google Structured Data-->
+<script type="application/ld+json">
+	{
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "https://www.fair-list.com",
+        "logo": "http://www.fair-list.com/images/fair-list_logo.png"
+	}
+</script>
+
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>{{ site.title }}</h2>
+							<p class="sc">{{ site.description | markdownify }}</p>
+							<ul class="actions">
+								<li><a href="#" class="button special">Coming Soon</a></li>
+							</ul>
+
+							<!-- Slider for savings calculation 
+							<div id="price_of_home"">100000</div>
+							<span>Typical Agents Commission <input type="text" id="commission" value="5"/></span>
+							<div>Save $<span id="savings_amount">5000</span> of your home equity.</div>
+							-->
+
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>{{page.section_one_title}}</h2>
+								
+								<p>{{page.section_one_content}}</p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-camera-retro major style1"><span class="label">Show</span></span></li>
+								<li><span class="icon fa-calendar major style2"><span class="label">Schedule</span></span></li>
+								<li><span class="icon fa-handshake-o major style3"><span class="label">Negotiate</span></span></li>
+								<li><span class="icon fa-truck major style4"><span class="label">Close</span></span></li>
+							</ul>
+							<a class="big button special" href="/sellers.html">List Now</a>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>{{page.section_two_spotlight1}}</h2>
+								<p>{{page.section_two_spotlight1_content}}</p>
+								<div align="center">
+								    <a class="button big special" href="/buyers.html">Sign Up Now</a>
+								</div>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>{{page.section_two_spotlight3}}</h2>
+								<p>{{page.section_two_spotlight3_content}}</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>{{page.section_two_spotlight2}}</h2>
+								<p>{{page.section_two_spotlight2_content}}</p>
+							</div>
+						</section>
+					</section>
+
+				{% if jekyll.environment == 'development' %}
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>{{page.section_three_title}}</h2>
+								<p>{{page.section_three_content}}</p>
+							</header>
+							<ul class="features">
+								<li class="icon {{page.affiliate1_icon}}">
+									<h3>{{page.affiliate1}}</h3>
+									<p>{{page.affiliate1_content}}</p>
+								</li>
+								<li class="icon {{page.affiliate2_icon}}">
+									<h3>{{page.affiliate2}}</h3>
+									<p>{{page.affiliate2_content}}</p>
+								</li>
+								<li class="icon {{page.affiliate3_icon}}">
+									<h3>{{page.affiliate3}}</h3>
+									<p>{{page.affiliate3_content}}</p>
+								</li>
+								<li class="icon {{page.affiliate4_icon}}">
+									<h3>{{page.affiliate4}}</h3>
+									<p>{{page.affiliate4_content}}</p>
+								</li>
+								<li class="icon {{page.affiliate5_icon}}">
+									<h3>{{page.affiliate5}}</h3>
+									<p>{{page.affiliate5_content}}</p>
+								</li>
+								<li class="icon {{page.affiliate6_icon}}">
+									<h3>{{page.affiliate6}}</h3>
+									<p>{{page.affiliate6_content}}</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				{% endif %}
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Stay Informed</h2>
+								<p>The state of the real estate market is in constant flux. <u>Get the latest tips to help you as a buyer or seller.</u></p>
+
+							</header>
+							<ul class="actions vertical">
+								<li><a href="/subscribe.html" class="button fit special">Subscribe</a></li>
+							</ul>
+						</div>
+
+					</section>
