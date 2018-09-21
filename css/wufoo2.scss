@@ -83,7 +83,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 html {
     background-image: none;
-    background-color: #616161;
+    background-color: #eeeeee;
 }
 
 #logo {
@@ -93,7 +93,7 @@ html {
 
 #container,
 html.embed {
-    background-color: #616161;
+    background-color: #ffffff;
 }
 
 .safari .wufoo input.file {
@@ -159,7 +159,7 @@ html.embed {
     font-family: 'oswald';
     font-style: normal;
     font-weight: 400;
-    color: #000000;
+    color: #ffffff;
 }
 
 .wufoo .info div {
@@ -167,7 +167,7 @@ html.embed {
     font-family: 'alegreya';
     font-style: normal;
     font-weight: 400;
-    color: #444444;
+    color: #EEEEEE;
 }
 
 .wufoo .section h3 {
@@ -192,7 +192,7 @@ html.embed {
     font-family: 'alegreya sc';
     font-style: normal;
     font-weight: 600;
-    color: #444444;
+    color: #EEEEEE;
 }
 
 .wufoo label.choice {
