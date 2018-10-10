@@ -29,6 +29,7 @@ markdown: kramdown
 
 # Google Analytics Token
 google_analytics: UA-120909028-1 
+google_adwords: AW-801345477
 
 # Amazon Alexa
 alexa_account: duVrr1O7kI20L7
