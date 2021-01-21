@@ -3,32 +3,22 @@ version: 2.1
 orbs:
   s3: circleci/aws-s3@2.0.0
 
-
 jobs:
   build:
     machine: true
     steps:
       - checkout
       - run: "bundle install && bundle exec jekyll build --trace --lsi --strict_front_matter --profile"
-
-#      - aws-s3/sync:
-#          arguments: |
-#            --acl public-read \
-#            --cache-control "max-age=86400"
-#          aws-access-key-id: AWS_ACCESS_KEY_ID_BLUE
-#          aws-region: AWS_REGION_BLUE
-#          aws-secret-access-key: AWS_SECRET_ACCESS_KEY_BLUE
-#          from: bucket
-#          to: 's3://my-s3-bucket-name/prefix'
-#            - aws-s3/copy:
-#                arguments: '--dryrun'
-#                from: bucket/build_asset.txt
-#                to: 's3://my-s3-bucket-name'
-
+      - s3/sync:
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-region: AWS_REGION
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+          from: /home/circleci/project/_site
+          to: 's3://fair-list.com'
 
 workflows:
   # workflow name
-  test:
+  deploy-site:
     # Run the welcome/run job in its own container
     jobs:
       - build
