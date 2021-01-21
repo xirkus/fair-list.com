@@ -6,11 +6,11 @@ orbs:
 jobs:
   build:
     machine: true
-    working_directory: ./project
+    working_directory: ./web-site
     steps:
       - checkout
       - run: |
-          export JEKYLL_VERSION=3.8 && docker run --rm --volume="~/project:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build
+          export JEKYLL_VERSION=3.8 && docker run --rm --volume="./web-site:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build
 #      - aws-s3/sync:
 #          arguments: |
 #            --acl public-read \
