@@ -2,15 +2,14 @@
 version: 2.1
 orbs:
   s3: circleci/aws-s3@2.0.0
+  jekyll: katana/jekyll@1.2.0
 
 jobs:
   build:
     machine: true
-    working_directory: ./web-site
     steps:
       - checkout
-      - run: |
-          export JEKYLL_VERSION=3.8 && docker run --rm --volume="./web-site:/srv/jekyll" -it jekyll/jekyll:$JEKYLL_VERSION jekyll build
+      - jekyll/build-site
 #      - aws-s3/sync:
 #          arguments: |
 #            --acl public-read \
