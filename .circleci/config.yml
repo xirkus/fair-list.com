@@ -6,7 +6,7 @@ orbs:
 jobs:
   build:
     machine: true
-    working_directory: ~/project
+    working_directory: ./project
     steps:
       - checkout
       - run: |
