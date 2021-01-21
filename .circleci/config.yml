@@ -2,14 +2,15 @@
 version: 2.1
 orbs:
   s3: circleci/aws-s3@2.0.0
-  jekyll: katana/jekyll@1.2.0
+
 
 jobs:
   build:
     machine: true
     steps:
       - checkout
-      - jekyll/build-site
+      - run: "bundle exec jekyll build --trace --lsi --strict_front_matter --profile"
+        
 #      - aws-s3/sync:
 #          arguments: |
 #            --acl public-read \
