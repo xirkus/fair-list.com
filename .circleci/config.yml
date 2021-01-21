@@ -17,12 +17,6 @@ jobs:
           to: 's3://fair-list.com'
 
 workflows:
-  # workflow name
   deploy-site:
-    # Run the welcome/run job in its own container
     jobs:
       - build
-#  machine-job:
-#      context:
-#        - build-env-vars
-#        - docker-hub-creds
