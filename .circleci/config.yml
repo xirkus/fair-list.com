@@ -9,8 +9,8 @@ jobs:
     machine: true
     steps:
       - checkout
-      - run: "bundle exec jekyll build --trace --lsi --strict_front_matter --profile"
-        
+      - run: "bundle install && bundle exec jekyll build --trace --lsi --strict_front_matter --profile"
+
 #      - aws-s3/sync:
 #          arguments: |
 #            --acl public-read \
